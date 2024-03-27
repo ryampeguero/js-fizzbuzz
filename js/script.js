@@ -7,6 +7,8 @@ for (let i = 0; i <= 100; i++) {
     const rowElem = document.querySelector(".row"); // object | null
     let boxElem = document.createElement("div"); // object | null
     let boxType = ""; //string
+
+    //Esecuzione logica
     if(i % 3 === 0 && i % 5 === 0 ){
         //FIZZBUZZ
         boxType = "fizzbuzz"
@@ -23,6 +25,8 @@ for (let i = 0; i <= 100; i++) {
         boxType = "normal"
         console.log("Normale: ", i);
     }
+
+    //OUTPUT
     boxElem.classList.add("box");
     boxElem.classList.add(boxType);
     boxElem.innerHTML = i;
